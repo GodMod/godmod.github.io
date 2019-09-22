@@ -5,34 +5,31 @@ entries:
   product: WSC OAuth Provider
   version: 1.0
   folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /oauthprovider_index.html   
 
   - title: OAuth-Consent
     folderitems:
 
-    - title: Introduction
-      url: /index.html
-      type: homepage
-    - title: Quick Start
-      url: /getting-started_quick-start.html
+    - title: OAuth-Consent
+      url: /oauthprovider_consent.html
 
   - title: Token-API
     folderitems:
 
-    - title: Pages
-      url: /php_pages.html
+    - title: Token-API
+      url: /oauthprovider_tokenapi.html
 
 
   - title: User-API
     folderitems:
 
-    - title: Pages
-      url: /php_pages.html
-    - title: Database Objects
-      url: /php_database-objects.html
-    - title: Database Access
-      url: /php_database-access.html
-    - title: Exceptions
-      url: /php_exceptions.html
+    - title: User-API
+      url: /oauthprovider_userapi.html
 
       
 - title: sidebar2
@@ -40,36 +37,45 @@ entries:
   version: 1.0
   folders:
   
-  - title: Settings
+  - title: Introduction
     folderitems:
 
     - title: Introduction
-      url: /index.html
-    - title: Quick Start
-      url: /getting-started_quick-start.html
+      url: /wscoauth_index.html
+      
+    - title: Settings
+      url: /wscoauth_settings.html  
   
 - title: sidebar3
   product: Generic OAuth Login
   version: 1.0
   folders:
   
-  - title: Settings
+  - title: Introduction
     folderitems:
 
     - title: Introduction
-      url: /index.html
-    - title: Quick Start
-      url: /getting-started_quick-start.html
+      url: /genoauth_index.html
   
+  - title: Settings
+    folderitems:
+
+    - title: OAuth
+      url: /genoauth_settings_oauth.html
+    - title: User-API
+      url: /genoauth_settings_userapi.html
+    - title: Buttons
+      url: /genoauth_settings_userapi.html  
+    - title: Customization
+      url: /genoauth_settings_custom.html     
+      
 - title: sidebar3
   product: Search Keywords
   version: 1.0
   folders:
   
-  - title: Settings
+  - title: Introduction
     folderitems:
 
     - title: Introduction
-      url: /index.html
-    - title: Quick Start
-      url: /getting-started_quick-start.html
+      url: /skw_index.html
