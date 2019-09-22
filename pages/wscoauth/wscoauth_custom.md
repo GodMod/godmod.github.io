@@ -21,7 +21,7 @@ To change the color of the login/connect buttons, you can add the following SCSS
 }
 ```
 
-### Customize Button Icon
+## Customize Button Icon
 
 You can replace the Icon at `<WSC-Folder>/images/wcf_oauth.png` with your own icon.
 
