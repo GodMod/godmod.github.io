@@ -135,7 +135,7 @@ a:hover {
 }
 
 .navbar-inverse {
-  background-color: linear-gradient(to bottom, #173d63, #225180);
+  background: linear-gradient(to bottom, #173d63, #225180);
   border-width: 0;
 }
 
