@@ -1,5 +1,5 @@
 ---
-title: WoltLab Suite 3.1 Documentation
+title: WSC Plugins Documentation
 sidebar: sidebar
 permalink: index.html
 toc: false
@@ -7,14 +7,12 @@ toc: false
 
 ## Introduction
 
-This documentation explains the basic API functionality and the creation of own packages. It is expected that you are somewhat experienced with [PHP](https://en.wikipedia.org/wiki/PHP), [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) and [MySQL](https://en.wikipedia.org/wiki/MySQL).
+This documentation explains the functionality of the plugins for the Woltlab Suite Core. It is expected that you are somewhat experienced with [PHP](https://en.wikipedia.org/wiki/PHP) and [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
-Head over to the [quick start tutorial][getting-started_quick-start] to learn more.
+## About GodMod and EQdkp Plus
 
-## About WoltLab Suite 3.1
+GodMod is a Core Developer of [EQdkp Plus](https://github.com/eqdkpplus) and also writes plugins for the [Woltlab Suite Core](https://www.woltlab.com/).
 
-The [WoltLab Suite Core](https://github.com/WoltLab/WCF) as well as most of the other packages are available on [github.com/WoltLab/](https://github.com/WoltLab) and are licensed under the terms of the [GNU Lesser General Public License 2.1](https://github.com/WoltLab/WCF/blob/master/LICENSE).
-
-You can edit this documentation by visiting the edit link on each page, it is also available on [GitHub](https://github.com/WoltLab/woltlab.github.io).
+You can edit this documentation by visiting the edit link on each page, it is also available on [GitHub](https://github.com/godmod/godmod.github.io).
 
 {% include links.html %}

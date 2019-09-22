@@ -2,10 +2,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: WCS Plugins Documentation
+topnav_title: WSC Plugins Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: WCS Plugins Documentation
+site_title: WSC Plugins Documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: GodMod / EQdkp Plus
@@ -98,4 +98,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: https://wcf.eqdkp-plus.eu
+url: https://wsc.eqdkp-plus.eu
