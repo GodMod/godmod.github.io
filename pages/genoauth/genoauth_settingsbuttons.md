@@ -1,7 +1,7 @@
 ---
 title: Button Settings
 sidebar: sidebar3
-permalink: wscoauth_settings_buttons.html
+permalink: wscoauth_settingsbuttons.html
 folder: wscoauth
 ---
 

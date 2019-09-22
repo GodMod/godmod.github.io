@@ -1,7 +1,7 @@
 ---
 title: User-API Settings
 sidebar: sidebar3
-permalink: wscoauth_settings_userapi.html
+permalink: wscoauth_settingsuserapi.html
 folder: wscoauth
 ---
 

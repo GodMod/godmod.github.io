@@ -1,7 +1,7 @@
 ---
 title: Customize
 sidebar: sidebar3
-permalink: wscoauth_settings_custom.html
+permalink: wscoauth_settingscustom.html
 folder: wscoauth
 ---
 

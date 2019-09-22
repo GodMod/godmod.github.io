@@ -45,11 +45,15 @@ entries:
     - title: Introduction
       url: /wscoauth_index.html
       
+  - title: Settings
+    folderitems:
+    
     - title: Settings
       url: /wscoauth_settings.html  
       
     - title: Customization
       url: /wscoauth_custom.html   
+      
 - title: sidebar3
   product: Generic OAuth Login
   version: 1.0
@@ -65,13 +69,13 @@ entries:
     folderitems:
 
     - title: OAuth
-      url: /genoauth_settings_oauth.html
+      url: /genoauth_settingsoauth.html
     - title: User-API
-      url: /genoauth_settings_userapi.html
+      url: /genoauth_settingsuserapi.html
     - title: Buttons
-      url: /genoauth_settings_buttons.html  
+      url: /genoauth_settingsbuttons.html  
     - title: Customization
-      url: /genoauth_settings_custom.html     
+      url: /genoauth_settingscustom.html     
       
 - title: sidebar4
   product: Search Keywords

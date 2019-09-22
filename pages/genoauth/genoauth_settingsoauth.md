@@ -1,7 +1,7 @@
 ---
 title: OAuth Settings
 sidebar: sidebar3
-permalink: wscoauth_settings_oauth.html
+permalink: wscoauth_settingsoauth.html
 folder: wscoauth
 ---
 
