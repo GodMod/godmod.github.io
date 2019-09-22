@@ -4,7 +4,7 @@ sidebar: sidebar1
 permalink: oauthprovider_userapi.html
 folder: oauthprovider
 ---
-The User-API returns information about the current user, like username, email-address or profile information. This depends on the [scope][oauthprovider_oauthprovider_consent] of the tokens.
+The User-API returns information about the current user, like username, email-address or profile information. This depends on the scope of the tokens.
 
 ## Authentication
 The User-API requires authentication by using an Access Token. Also, an JWT Token can be used to access this API.
@@ -41,7 +41,7 @@ The response has JSON format. The response only contains the fields correspondin
 
 Example for scope `identiy`:
 
-```json
+```
 { 
    "userID":1,
    "username":"root",
@@ -55,7 +55,7 @@ Example for scope `identiy`:
 
 Example for scope `email`:
 
-```json
+```
 { 
    "email":"admin@admin.de"
 }
@@ -64,7 +64,7 @@ Example for scope `email`:
 
 Example with all scopes:
 
-```json
+```
 { 
    "userID":1,
    "username":"root",
