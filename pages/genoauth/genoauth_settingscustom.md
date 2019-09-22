@@ -21,7 +21,7 @@ To change the color of the login/connect buttons, you can add the following SCSS
 }
 ```
 
-### Customize Button Icon
+## Customize Button Icon
 
 To add a custom image to the Button, you can use the following CSS code. Please adjust the URL to your Icon and insert an absolute URL.
 ```

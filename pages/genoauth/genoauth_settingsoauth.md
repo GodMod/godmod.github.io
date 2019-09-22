@@ -17,11 +17,11 @@ folder: genoauth
 ## Example
 As an example, the plugin will be configured for using [Discord](https://discordapp.com). All required information can be found at the [Developer Portal](https://discordapp.com/developers/docs/topics/oauth2).
 
-* Name of the OAuth Provider - *Discord*
-* Client-ID - *1234567890*
-* Client Secret - *AbCdEfGhiJAbCdEfGhiJAbCdEfGhiJ*
-* Scope - *identify email*
-* Authorization Endpoint - *https://discordapp.com/api/oauth2/authorize*
-* Token Endpoint - *https://discordapp.com/api/oauth2/token*
+* Name of the OAuth Provider - `Discord`
+* Client-ID - `1234567890`
+* Client Secret - `AbCdEfGhiJAbCdEfGhiJAbCdEfGhiJ`
+* Scope - `identify email`
+* Authorization Endpoint - `https://discordapp.com/api/oauth2/authorize`
+* Token Endpoint - `https://discordapp.com/api/oauth2/token`
 
 {% include links.html %}

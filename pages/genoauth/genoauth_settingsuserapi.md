@@ -17,11 +17,11 @@ folder: genoauth
 ## Example
 As an example, the plugin will be configured for using [Discord](https://discordapp.com). All required information can be found at the [Developer Portal](https://discordapp.com/developers/docs/resources/user#get-current-user).
 
-* URL of the User-API - *https://discordapp.com/api/users/@me*
-* Passing of the Access-Tokens - *Authorization-Header "Bearer"*
-* Parametername of the Access-Tokens - *access_token*
-* Key of the User-ID - *id*
-* Key of the Username - *username*
-* Key of the Email-Address - *email*
+* URL of the User-API - `https://discordapp.com/api/users/@me`
+* Passing of the Access-Tokens - `Authorization-Header "Bearer"`
+* Parametername of the Access-Tokens - `access_token`
+* Key of the User-ID - `id`
+* Key of the Username - `username`
+* Key of the Email-Address - `email`
 
 {% include links.html %}
