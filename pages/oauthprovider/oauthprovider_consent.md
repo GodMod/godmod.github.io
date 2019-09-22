@@ -9,6 +9,9 @@ folder: oauthprovider
 
 The Authorization-Endpoint shows an page to the User with the requested scopes. The user must authorize the application before the user is returned to the Client application.
 
+## URL
+You can get the URL for the Authorization-Endpoint when editing the OAuth-Client.
+
 ## Scopes
 
 The following scopes can be requested.
@@ -33,7 +36,7 @@ The following parameters are optional:
 
 | Name | Description |
 |------|-------------|
-|`redirect_uri` | Your redirect_uri. Default: the one saved with the OAuth Client |
+|`redirect_uri` | Your redirect_uri, urlencoded. Default: the one saved with the OAuth Client |
 |`response_type` | `code` will return access token, `token` will return JWT Token. Default: `code` |
 |`state` | a custom state from your application. Please see next chapter for using this param for security purposes |
 

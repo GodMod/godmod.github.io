@@ -9,6 +9,9 @@ folder: oauthprovider
 
 The User-API returns information about the current user, like username, email-address or profile information. This depends on the scope of the tokens.
 
+## URL
+You can get the URL for the User-API when editing the OAuth-Client.
+
 ## Authentication
 
 The User-API requires authentication by using an Access Token. Also, an JWT Token can be used to access this API.

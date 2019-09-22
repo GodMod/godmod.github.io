@@ -9,6 +9,9 @@ folder: oauthprovider
 
 The Token-Endpoint exchanges the authorisation code into an user's access token.
 
+## URL
+You can get the URL for the Token-Endpoint when editing the OAuth-Client.
+
 ## Request Format
 
 Only `POST` requests should be used for accessing this endpoint. Also, this endpoint accepts a content type of `application/x-www-form-urlencoded` only.
