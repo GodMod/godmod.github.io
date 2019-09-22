@@ -18,5 +18,8 @@ There are two group permissions:
 | Can use OAuth | User | Allows an user to authorize applications |
 | Can manage OAuth-Clients | Admin | Can manage OAuth-Clients |
 
+## Security
+Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoints, as personal information (e.g. email address) is transfered or can be accessed.
+
 
 {% include links.html %}

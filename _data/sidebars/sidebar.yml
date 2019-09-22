@@ -14,19 +14,18 @@ entries:
 
     - title: Creating OAuth-Clients
       url: /oauthprovider_client.html
+      
+    - title: Authorized Applications
+      url: /oauthprovider_apps.html
 
-  - title: Authorization Endpoint
+  - title: OAuth Endpoints
     folderitems:
 
     - title: Authorization Endpoint
       url: /oauthprovider_consent.html
 
-  - title: Token-Endpoint
-    folderitems:
-
     - title: Token-Endpoint
       url: /oauthprovider_tokenapi.html
-
 
   - title: User-API
     folderitems:
@@ -68,7 +67,7 @@ entries:
     - title: User-API
       url: /genoauth_settings_userapi.html
     - title: Buttons
-      url: /genoauth_settings_userapi.html  
+      url: /genoauth_settings_buttons.html  
     - title: Customization
       url: /genoauth_settings_custom.html     
       
