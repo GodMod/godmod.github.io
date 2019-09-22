@@ -7,132 +7,106 @@ folder: oauthprovider
 
 ## Introduction
 
-The User-API returns information about the current user, like username, email-address or profile information. This depends on the scope of the tokens.
+The General Data Protection Regulation (GDPR) of the European Union enters into
+force on May 25, 2018. It comes with a set of restrictions when handling users'
+personal data as well as to provide an interface to export this data on demand.
 
-## Authentication
+If you're looking for a guide on the implications of the GDPR and what you will
+need or consider to do, please read the article [Implementation of the GDPR](https://www.woltlab.com/article/106-implementation-of-the-gdpr/)
+on woltlab.com.
 
-The User-API requires authentication by using an Access Token. Also, an JWT Token can be used to access this API.
+## Including Data in the Export
 
-```php
-$request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/?access_token='.$data['access_token']);
-$request->execute();
-```
+The `wcf\acp\action\UserExportGdprAction` introduced with WoltLab Suite 3.1.3
+already includes the Core itself as well as all official apps, but you'll need to
+include any personal data stored for your plugin or app by yourself.
 
-You can pass the Access/JWT Token using the GET or POST param `access_token`, or using the HTTP Header `AUTHORIZATION` and pass the Bearer Token like this:
+The event `export` is fired before any data is sent out, but after any Core data
+has been dumped to the `$data` property.
 
-```php
-$request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/');
-$request->addHeader('Authorization', 'Bearer '.$data['access_token']);
-$request->execute();
-```
-
-## Request Format
-
-The Request should be made using GET, but POST is also possible.
-Except the `access_token` parameter, there are no other parameters-
-
-## Example Request
+### Example code
 
 ```php
-$request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/');
-$request->addHeader('Authorization', 'Bearer 82ba1fa5bab8932a49a011c8f7004a17ee0b134c906ecf478804c79fc18ca6d2d72fd87c299f507370d2e054e79d9e887543');
-$request->execute();
-```
+<?php
+namespace wcf\system\event\listener;
+use wcf\acp\action\UserExportGdprAction;
+use wcf\data\user\UserProfile;
 
-## Response Format
+class MyUserExportGdprActionListener implements IParameterizedEventListener {
+  public function execute(/** @var UserExportGdprAction $eventObj */$eventObj, $className, $eventName, array &$parameters) {
+    /** @var UserProfile $user */
+    $user = $eventObj->user;
 
-The response has JSON format. The response only contains the fields corresponding to the scope of the tokens.
-
-## Example Response
-
-Example for scope `identiy`:
-
-```
-{ 
-   "userID":1,
-   "username":"root",
-   "avatar":{ 
-      "url":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
-      "height":128,
-      "width":128
-   }
+    $eventObj->data['my.fancy.plugin'] = [
+      'superPersonalData' => "This text is super personal and should be included in the output",
+      'weirdIpAddresses' => $eventObj->exportIpAddresses('app'.WCF_N.'_non_standard_column_names_for_ip_addresses', 'ipAddressColumnName', 'timeColumnName', 'userIDColumnName')
+    ];
+    $eventObj->exportUserProperties[] = 'shouldAlwaysExportThisField';
+    $eventObj->exportUserPropertiesIfNotEmpty[] = 'myFancyField';
+    $eventObj->exportUserOptionSettings[] = 'thisSettingIsAlwaysExported';
+    $eventObj->exportUserOptionSettingsIfNotEmpty[] = 'someSettingContainingPersonalData';
+    $eventObj->ipAddresses['my.fancy.plugin'] = ['wcf'.WCF_N.'_my_fancy_table', 'wcf'.WCF_N.'_i_also_store_ipaddresses_here'];
+    $eventObj->skipUserOptions[] = 'thisLooksLikePersonalDataButItIsNot';
+    $eventObj->skipUserOptions[] = 'thisIsAlsoNotPersonalDataPleaseIgnoreIt';
+  }
 }
 ```
 
-Example for scope `email`:
+### `$data`
 
-```
-{ 
-   "email":"admin@admin.de"
-}
-```
+Contains the entire data that will be included in the exported JSON file, some
+fields may already exist (such as `'com.woltlab.wcf'`) and while you may add or
+edit any fields within, you should restrict yourself to only append data from
+your plugin or app.
 
+### `$exportUserProperties`
 
-Example with all scopes:
+Only a whitelist of  columns in `wcfN_user` is exported by default, if your plugin
+or app adds one or more columns to this table that do hold personal data, then
+you will have to append it to this array. The listed properties will always be
+included regardless of their content.
 
-```
-{ 
-   "userID":1,
-   "username":"root",
-   "avatar":{ 
-      "url":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
-      "height":128,
-      "width":128
-   },
-   "email":"admin@admin.de",
-   "profile":{ 
-      "userOption1":null,
-      "userOption2":"0000-00-00",
-      "userOption3":1,
-      "userOption4":"0",
-      "userOption5":null,
-      "userOption6":null,
-      "userOption7":null,
-      "userOption8":null,
-      "userOption9":null,
-      "userOption10":null,
-      "userOption11":null,
-      "userOption12":null,
-      "userOption13":null,
-      "userOption14":null,
-      "userOption15":1,
-      "userOption16":null,
-      "userOption17":1,
-      "userOption18":1,
-      "userOption19":"0",
-      "userOption20":"0",
-      "userOption21":"0",
-      "userOption22":"3",
-      "userOption23":"1",
-      "userOption24":1,
-      "userOption25":"1",
-      "userOption26":"0",
-      "userOption27":"0",
-      "userOption28":"0",
-      "userOption29":"0",
-      "userOption30":"0",
-      "userOption31":1,
-      "userOption35":"0",
-      "userOption36":"0",
-      "userOption37":0,
-      "groupID":4,
-      "cssClassName":"blue",
-      "registrationDate":1549550181,
-      "banned":0,
-      "banReason":null,
-      "banExpires":0,
-      "oldUsername":"",
-      "birthday":"",
-      "age":0,
-      "rank":{ 
+### `$exportUserPropertiesIfNotEmpty`
 
-      },
-      "title":"root",
-      "userTitle":"Administrator",
-      "signature":""
-   }
-}
-```
+Only a whitelist of  columns in `wcfN_user` is exported by default, if your plugin
+or app adds one or more columns to this table that do hold personal data, then
+you will have to append it to this array. Empty values will not be added to the
+output.
+
+### `$exportUserOptionSettings`
+
+Any user option that exists within a `settings.*` category is automatically
+excluded from the export, with the notable exception of the `timezone` option.
+You can opt-in to include your setting by appending to this array, if it contains
+any personal data. The listed settings are always included regardless of their
+content.
+
+### `$exportUserOptionSettingsIfNotEmpty`
+
+Any user option that exists within a `settings.*` category is automatically
+excluded from the export, with the notable exception of the `timezone` option.
+You can opt-in to include your setting by appending to this array, if it contains
+any personal data.
+
+### `$ipAddresses`
+
+List of database table names per package identifier that contain ip addresses.
+The contained ip addresses will be exported when the ip logging module is enabled.
+
+It expects the database table to use the column names `ipAddress`, `time` and
+`userID`. If your table does not match this pattern for whatever reason, you'll
+need to manually probe for `LOG_IP_ADDRESS` and then call `exportIpAddresses()`
+to retrieve the list. Afterwards you are responsible to append these ip addresses
+to the `$data` array to have it exported.
+
+### `$skipUserOptions`
+
+All user options are included in the export by default, unless they start with
+`can*` or `admin*`, or are blacklisted using this array. You should append any
+of your plugin's or app's user option that should not be exported, for example
+because it does not contain personal data, such as internal data.
+
+{% include links.html %}
 
 
 {% include links.html %}
