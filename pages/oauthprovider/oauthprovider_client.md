@@ -1,7 +1,7 @@
 ---
 title: User-API
 sidebar: sidebar1
-permalink: oauthprovider_userapi.html
+permalink: oauthprovider_client.html
 folder: oauthprovider
 ---
 
