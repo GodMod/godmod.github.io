@@ -38,7 +38,15 @@ entries:
 - title: sidebar2
   product: WSC OAuth Login
   version: 1.0
-  url: /php_pages.html
+  folders:
+  
+  - title: Settings
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+    - title: Quick Start
+      url: /getting-started_quick-start.html
   
 - title: sidebar3
   product: Generic OAuth Login
@@ -56,4 +64,12 @@ entries:
 - title: sidebar3
   product: Search Keywords
   version: 1.0
-  url: /php_pages.html
+  folders:
+  
+  - title: Settings
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+    - title: Quick Start
+      url: /getting-started_quick-start.html

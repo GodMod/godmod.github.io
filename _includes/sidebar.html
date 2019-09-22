@@ -1,9 +1,8 @@
 {% include custom/sidebarconfigs.html %}
 
 <ul id="mysidebar" class="nav">
-    <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
-
     {% for entry in sidebar %}
+		<li class="sidebarTitle">{{entry.product}} {{entry.version}}</li>
         {% for folder in entry.folders %}
             <li>
                 <a href="#">{{ folder.title }}</a>
@@ -41,6 +40,7 @@
                 </ul>
             </li>
         {% endfor %}
+		
     {% endfor %}
 </ul>
 
