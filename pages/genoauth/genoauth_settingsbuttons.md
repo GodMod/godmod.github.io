@@ -1,8 +1,8 @@
 ---
 title: Button Settings
 sidebar: sidebar3
-permalink: wscoauth_settingsbuttons.html
-folder: wscoauth
+permalink: genoauth_settingsbuttons.html
+folder: genoauth
 ---
 
 ## Buttons Settings

@@ -1,8 +1,8 @@
 ---
 title: User-API Settings
 sidebar: sidebar3
-permalink: wscoauth_settingsuserapi.html
-folder: wscoauth
+permalink: genoauth_settingsuserapi.html
+folder: genoauth
 ---
 
 ## User-API Settings

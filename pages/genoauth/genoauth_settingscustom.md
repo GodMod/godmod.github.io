@@ -1,8 +1,8 @@
 ---
 title: Customize
 sidebar: sidebar3
-permalink: wscoauth_settingscustom.html
-folder: wscoauth
+permalink: genoauth_settingscustom.html
+folder: genoauth
 ---
 
 ## Customize Button Colors

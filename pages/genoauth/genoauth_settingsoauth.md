@@ -1,8 +1,8 @@
 ---
 title: OAuth Settings
 sidebar: sidebar3
-permalink: wscoauth_settingsoauth.html
-folder: wscoauth
+permalink: genoauth_settingsoauth.html
+folder: genoauth
 ---
 
 ## OAuth Settings
