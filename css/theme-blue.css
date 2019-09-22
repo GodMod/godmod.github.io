@@ -38,8 +38,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #347DBE;
-    border-color: #015CAE;
+    background-color: linear-gradient(to bottom, #173d63, #225180);
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -185,15 +184,15 @@ a:hover {
 }
 
 .pageFooter {
-  background-color: #325C84;
-  color: #D9DCDE;
+  background-color: #000;
+  color: rgba(217, 220, 222, 1);
   flex: 0 0 auto;
   padding: 20px 0;
   text-align: center;
 }
 
 .pageFooter a {
-  color: #D9DCDE;
+  color: #999;
 }
 
 .pageFooter a:hover {
