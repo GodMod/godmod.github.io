@@ -38,9 +38,18 @@ Except the `access_token` parameter, there are no other parameters.
 
 ## Example Request
 
+Example request with Access Token:
+
 ```php
 $request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/');
 $request->addHeader('Authorization', 'Bearer 82ba1fa5bab8932a49a011c8f7004a17ee0b134c906ecf478804c79fc18ca6d2d72fd87c299f507370d2e054e79d9e887543');
+$request->execute();
+```
+
+Example request with JWT Token:
+
+```php
+$request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/?access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3NvbnN0aWdlXC9mb3J1bTUuMS43XC91cGxvYWRcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvc29uc3RpZ2VcL2ZvcnVtNS4xLjdcL3VwbG9hZFwvIiwiaWF0IjoxNTY5MTYxNDI5LCJuYmYiOjE1NjkxNjEzNjksImV4cCI6MTU2OTE2MzIyOSwiZGF0YSI6eyJjbGllbnRJRCI6IjE0MjE1ODkxOTgiLCJzY29wZSI6ImlkZW50aWZ5IGVtYWlsIHByb2ZpbGUiLCJ1c2VySUQiOjEsInVzZXJuYW1lIjoicm9vdCIsImVtYWlsIjoiYWRtaW5AYWRtaW4uZGUifX0.8agUuQAqoqBRHo5wHJRQMtSJHmvNfVBd7s1eURdVHw8');
 $request->execute();
 ```
 
