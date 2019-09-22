@@ -4,6 +4,7 @@ sidebar: sidebar1
 permalink: oauthprovider_userapi.html
 folder: oauthprovider
 ---
+## Introduction
 The User-API returns information about the current user, like username, email-address or profile information. This depends on the scope of the tokens.
 
 ## Authentication
