@@ -10,7 +10,10 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /oauthprovider_index.html   
+      url: /oauthprovider_index.html 
+
+    - title: Creating OAuth-Clients
+      url: /oauthprovider_client.html
 
   - title: OAuth-Consent
     folderitems:
@@ -69,7 +72,7 @@ entries:
     - title: Customization
       url: /genoauth_settings_custom.html     
       
-- title: sidebar3
+- title: sidebar4
   product: Search Keywords
   version: 1.0
   folders:
