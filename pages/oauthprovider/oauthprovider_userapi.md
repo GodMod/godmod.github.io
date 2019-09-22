@@ -13,12 +13,14 @@ The User-API returns information about the current user, like username, email-ad
 
 The User-API requires authentication by using an Access Token. Also, an JWT Token can be used to access this API.
 
+You can pass the Access/JWT Token using the GET or POST param `access_token`.
+
 ```php
 $request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/?access_token='.$data['access_token']);
 $request->execute();
 ```
 
-You can pass the Access/JWT Token using the GET or POST param `access_token`, or using the HTTP Header `AUTHORIZATION` and pass the Bearer Token like this:
+Or the token can be passed by using the HTTP Header `Authorization` like this:
 
 ```php
 $request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/');
@@ -29,7 +31,7 @@ $request->execute();
 ## Request Format
 
 The Request should be made using GET, but POST is also possible.
-Except the `access_token` parameter, there are no other parameters-
+Except the `access_token` parameter, there are no other parameters.
 
 ## Example Request
 
@@ -45,7 +47,7 @@ The response has JSON format. The response only contains the fields correspondin
 
 ## Example Response
 
-Example for scope `identiy`:
+Example for scope `identify`:
 
 ```
 { 
@@ -68,7 +70,7 @@ Example for scope `email`:
 ```
 
 
-Example with all scopes:
+Example with all scopes (`identify`, `email` and `profile`):
 
 ```
 { 

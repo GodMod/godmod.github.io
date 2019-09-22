@@ -15,16 +15,16 @@ entries:
     - title: Creating OAuth-Clients
       url: /oauthprovider_client.html
 
-  - title: OAuth-Consent
+  - title: Authorization Endpoint
     folderitems:
 
-    - title: OAuth-Consent
+    - title: Authorization Endpoint
       url: /oauthprovider_consent.html
 
-  - title: Token-API
+  - title: Token-Endpoint
     folderitems:
 
-    - title: Token-API
+    - title: Token-Endpoint
       url: /oauthprovider_tokenapi.html
 
 
