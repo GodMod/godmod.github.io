@@ -47,7 +47,9 @@ entries:
       
     - title: Settings
       url: /wscoauth_settings.html  
-  
+      
+    - title: Customization
+      url: /wscoauth_custom.html   
 - title: sidebar3
   product: Generic OAuth Login
   version: 1.0
