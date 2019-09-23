@@ -69,13 +69,13 @@ As response, the user is redirected to your application, explicit to your given 
 
 Example Response for access token:
 
-```
+```html
 https://somedomain.com/oauth-return/?code=ec7be46a4925ed5c8f1204c2a904827a7b07f3d8b3af8164d640be0f1f3e9b84e84b67d44546bf61a2f505e4759de9520fb0&state=d927c1a4bca1da94040
 ```
 
 Example Response for JWT Token:
 
-```
+```html
 https://somedomain.com/oauth-return/#access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3NvbnN0aWdlXC9mb3J1bTUuMS43XC91cGxvYWRcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvc29uc3RpZ2VcL2ZvcnVtNS4xLjdcL3VwbG9hZFwvIiwiaWF0IjoxNTY5MTYxNDI5LCJuYmYiOjE1NjkxNjEzNjksImV4cCI6MTU2OTE2MzIyOSwiZGF0YSI6eyJjbGllbnRJRCI6IjE0MjE1ODkxOTgiLCJzY29wZSI6ImlkZW50aWZ5IGVtYWlsIHByb2ZpbGUiLCJ1c2VySUQiOjEsInVzZXJuYW1lIjoicm9vdCIsImVtYWlsIjoiYWRtaW5AYWRtaW4uZGUifX0.8agUuQAqoqBRHo5wHJRQMtSJHmvNfVBd7s1eURdVHw8&state=d927c1a4bca1da94040
 ```
 
@@ -85,7 +85,7 @@ The returned JWT Token has three sections: header, payload and the signature.
 
 The header contains the used algorithm and token type. Currently, only the HS256 algorithm is supported.
 
-```
+```json
 {
   "typ": "JWT",
   "alg": "HS256"
@@ -94,7 +94,7 @@ The header contains the used algorithm and token type. Currently, only the HS256
 
 The payload contains the following data:
 
-```
+```json
 {
   "iss": "https://test.eqdkp-plus.eu/",
   "aud": "https://test.eqdkp-plus.eu/",

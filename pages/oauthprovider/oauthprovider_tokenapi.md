@@ -48,7 +48,7 @@ The response has `JSON` format.
 ## Example Response
 
 
-```
+```json
 { 
    "access_token":"a959083fccacea34e1ecdc9acf4ab24b38c9aacd317f0c3bf9e1ae51b25a5a5b10b92174d4327c60024307605e5d927c1a4bca1da94040a76f6c12be6e85a8a9457d83039068",
    "token_type":"Bearer",

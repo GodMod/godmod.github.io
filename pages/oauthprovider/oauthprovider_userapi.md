@@ -61,7 +61,7 @@ The response has `JSON` format. The response only contains the fields correspond
 
 Example for scope `identify`:
 
-```
+```json
 { 
    "userID":1,
    "username":"root",
@@ -75,7 +75,7 @@ Example for scope `identify`:
 
 Example for scope `email`:
 
-```
+```json
 { 
    "email":"admin@admin.de"
 }
@@ -84,7 +84,7 @@ Example for scope `email`:
 
 Example with all scopes (`identify`, `email` and `profile`):
 
-```
+```json
 { 
    "userID":1,
    "username":"root",
