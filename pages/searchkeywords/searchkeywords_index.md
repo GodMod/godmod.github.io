@@ -14,4 +14,7 @@ There are no settings for this plugin.
 ## Permissions
 Users need the administrative permission to view Logs in order to see the searched keywords.
 
+## License
+See [Commercial License](license_en.html).
+
 {% include links.html %}
