@@ -38,7 +38,7 @@ $strResult = $this->urlfetcher->post('https://test.eqdkp-plus.eu/wcf/oauth-token
 	'grant_type' => 'authorization_code', 
 	'code' => 'aa7c87e3595cc9ae1f04a4cf7769a8ccb972b99931a542e2aedecd9428aa7d8c18d6f16b2fa96020b4cf5aff44d8ce87bdec', 
 	'scope' => 'identify email profile', 
-	'redirect_uri' => 'http://localhost/dashboard/'), "application/x-www-form-urlencoded; charset=utf-8");
+	'redirect_uri' => 'https://somedomain.com/oauth-return/'), "application/x-www-form-urlencoded; charset=utf-8");
 ```
 
 ## Response Format

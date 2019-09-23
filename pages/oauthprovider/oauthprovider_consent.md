@@ -52,13 +52,13 @@ While the use of the `state` parameter is not required, it is highly recommend t
 Example Request for access token: 
 
 ```php
-https://test.eqdkp-plus.eu/wcf/oauth-consent/?client_id=1421589198&redirect_uri=http://localhost/dashboard/&scope=identify+email+profile&state=d927c1a4bca1da94040&response_type=code
+https://test.eqdkp-plus.eu/wcf/oauth-consent/?client_id=1421589198&redirect_uri=https://somedomain.com/oauth-return/&scope=identify+email+profile&state=d927c1a4bca1da94040&response_type=code
 ```
 
 Example Request for JWT Token (Implicit Grant type must be enabled for your OAuth Client):
 
 ```php
-https://test.eqdkp-plus.eu/wcf/oauth-consent/?client_id=1421589198&redirect_uri=http://localhost/dashboard/&scope=identify+email+profile&state=d927c1a4bca1da94040&response_type=token
+https://test.eqdkp-plus.eu/wcf/oauth-consent/?client_id=1421589198&redirect_uri=https://somedomain.com/oauth-return/&scope=identify+email+profile&state=d927c1a4bca1da94040&response_type=token
 ```
 
 ## Response Format
@@ -70,13 +70,13 @@ As response, the user is redirected to your application, explicit to your given 
 Example Response for access token:
 
 ```
-http://localhost/dashboard/?code=ec7be46a4925ed5c8f1204c2a904827a7b07f3d8b3af8164d640be0f1f3e9b84e84b67d44546bf61a2f505e4759de9520fb0&state=d927c1a4bca1da94040
+https://somedomain.com/oauth-return/?code=ec7be46a4925ed5c8f1204c2a904827a7b07f3d8b3af8164d640be0f1f3e9b84e84b67d44546bf61a2f505e4759de9520fb0&state=d927c1a4bca1da94040
 ```
 
 Example Response for JWT Token:
 
 ```
-http://localhost/dashboard/#access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3NvbnN0aWdlXC9mb3J1bTUuMS43XC91cGxvYWRcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvc29uc3RpZ2VcL2ZvcnVtNS4xLjdcL3VwbG9hZFwvIiwiaWF0IjoxNTY5MTYxNDI5LCJuYmYiOjE1NjkxNjEzNjksImV4cCI6MTU2OTE2MzIyOSwiZGF0YSI6eyJjbGllbnRJRCI6IjE0MjE1ODkxOTgiLCJzY29wZSI6ImlkZW50aWZ5IGVtYWlsIHByb2ZpbGUiLCJ1c2VySUQiOjEsInVzZXJuYW1lIjoicm9vdCIsImVtYWlsIjoiYWRtaW5AYWRtaW4uZGUifX0.8agUuQAqoqBRHo5wHJRQMtSJHmvNfVBd7s1eURdVHw8&state=d927c1a4bca1da94040
+https://somedomain.com/oauth-return/#access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3NvbnN0aWdlXC9mb3J1bTUuMS43XC91cGxvYWRcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvc29uc3RpZ2VcL2ZvcnVtNS4xLjdcL3VwbG9hZFwvIiwiaWF0IjoxNTY5MTYxNDI5LCJuYmYiOjE1NjkxNjEzNjksImV4cCI6MTU2OTE2MzIyOSwiZGF0YSI6eyJjbGllbnRJRCI6IjE0MjE1ODkxOTgiLCJzY29wZSI6ImlkZW50aWZ5IGVtYWlsIHByb2ZpbGUiLCJ1c2VySUQiOjEsInVzZXJuYW1lIjoicm9vdCIsImVtYWlsIjoiYWRtaW5AYWRtaW4uZGUifX0.8agUuQAqoqBRHo5wHJRQMtSJHmvNfVBd7s1eURdVHw8&state=d927c1a4bca1da94040
 ```
 
 ## JWT Token

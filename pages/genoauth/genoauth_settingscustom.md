@@ -26,7 +26,7 @@ To change the color of the login/connect buttons, you can add the following SCSS
 To add a custom image to the Button, you can use the following CSS code. Please adjust the URL to your Icon and insert an absolute URL.
 ```
 .thirdPartyLoginButton.genoauthLoginButton .icon {
-   background: url(http://localhost/sonstige/forum5.1.7/upload//images/wcf_oauth.png) no-repeat center center;
+   background: url(https://eqdkp-plus.eu/images/some_icon.png) no-repeat center center;
    background-size: contain;
 }
 
