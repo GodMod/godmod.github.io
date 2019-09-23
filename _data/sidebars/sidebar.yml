@@ -87,3 +87,14 @@ entries:
 
     - title: Introduction
       url: /searchkeywords_index.html
+      
+- title: license
+  product: Licenses
+  version: 
+  folders:
+  
+  - title: Licenses
+    folderitems:
+
+    - title: Commercial License
+      url: /license_en.html

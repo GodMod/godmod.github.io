@@ -1,0 +1,14 @@
+# Stash for pages that exist, but do not appear in `sidebar.yml`
+
+entries:
+- title: other
+  folders:
+  - title: License
+    folderitems:
+
+    - title: license_en.html
+      url: /license_en.html
+
+    - title: license_de.html
+      url: /license_de.html
+      
