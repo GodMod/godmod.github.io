@@ -7,7 +7,7 @@ folder: wscoauth
 
 ## Customize Button Colors
 
-To change the color of the login/connect buttons, you can add the following SCSS to your style and adjust the colorss:
+To change the color of the login/connect buttons, you can add the following SCSS to your style and adjust the colors:
 
 ```
 .thirdPartyLogin {
