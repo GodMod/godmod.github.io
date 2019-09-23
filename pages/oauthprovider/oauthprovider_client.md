@@ -12,11 +12,11 @@ folder: oauthprovider
 
 ## Edit OAuth-Client
 When edit an OAuth-Client, you will get the following additional information:
-* Authorization-URL
-* Token-Endpoint
-* User-API Endpoint
-* Client-ID
-* Client-Secret
-* JWT-Secret
+* Authorization-URL - *Copy it into your application*
+* Token-Endpoint - *Copy it into your application*
+* User-API Endpoint - *Copy it into your application*
+* Client-ID - *Copy it into your application*
+* Client-Secret - *Copy it into your application, but it should be kept secret*
+* JWT-Secret - *Used to verify the Signature of the JWT Token*
 
 {% include links.html %}

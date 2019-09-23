@@ -37,8 +37,8 @@ $strResult = $this->urlfetcher->post('https://test.eqdkp-plus.eu/wcf/oauth-token
 	'client_secret' => 'C7LxkuPm0a7JozCd16cyiKLA31UHqbwdUZPxX8auDDO3uiiFqa1Q7SRObHtLsd2k9pmYZqmAqKBlkf3ThCtScMSTzhz9DSfjW7GP0DAfNaWO0ZXNT8SzNqWO6yTfwVq7', 
 	'grant_type' => 'authorization_code', 
 	'code' => 'aa7c87e3595cc9ae1f04a4cf7769a8ccb972b99931a542e2aedecd9428aa7d8c18d6f16b2fa96020b4cf5aff44d8ce87bdec', 
-	'scope' => 'identify email', 
-	'redirect_uri' => 'http://localhost/'), "application/x-www-form-urlencoded; charset=utf-8");
+	'scope' => 'identify email profile', 
+	'redirect_uri' => 'http://localhost/dashboard/'), "application/x-www-form-urlencoded; charset=utf-8");
 ```
 
 ## Response Format
@@ -53,7 +53,7 @@ The response has `JSON` format.
    "access_token":"a959083fccacea34e1ecdc9acf4ab24b38c9aacd317f0c3bf9e1ae51b25a5a5b10b92174d4327c60024307605e5d927c1a4bca1da94040a76f6c12be6e85a8a9457d83039068",
    "token_type":"Bearer",
    "expires_in":3600,
-   "scope":"identify email"
+   "scope":"identify email profile"
 }
 ```
 
