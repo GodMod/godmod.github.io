@@ -98,8 +98,6 @@ entries:
 
     - title: Introduction
       url: /hidelogin_index.html
-    - title: Settings
-      url: /hidelogin_settings.html
       
 - title: sidebar6
   product: Battle.net Login
@@ -111,8 +109,6 @@ entries:
 
     - title: Introduction
       url: /battlenetlogin_index.html
-    - title: Settings
-      url: /battlenetlogin_settings.html
       
 - title: sidebar7
   product: Twitch Login
@@ -124,5 +120,3 @@ entries:
 
     - title: Introduction
       url: /twitchlogin_index.html
-    - title: Settings
-      url: /twitchlogin_settings.html      
