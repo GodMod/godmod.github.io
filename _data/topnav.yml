@@ -3,6 +3,7 @@
 topnav:
 - title: eqdkp
   items:
-    - title: EQdkp Plus
-      external_url: https://eqdkp-plus.eu
-
+    - title: Downloads
+      external_url: https://wsc.eqdkp-plus.eu
+    - title: Support
+      external_url: https://forum.eqdkp-plus.eu/board/51-wsc-plugins/

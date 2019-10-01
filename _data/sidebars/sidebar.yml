@@ -88,13 +88,41 @@ entries:
     - title: Introduction
       url: /searchkeywords_index.html
       
-- title: license
-  product: Licenses
+- title: sidebar5
+  product: Hide Login
   version: 
   folders:
   
-  - title: Licenses
+  - title: Introduction
     folderitems:
 
-    - title: Commercial License
-      url: /license_en.html
+    - title: Introduction
+      url: /hidelogin_index.html
+    - title: Settings
+      url: /hidelogin_settings.html
+      
+- title: sidebar6
+  product: Battle.net Login
+  version: 
+  folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /battlenetlogin_index.html
+    - title: Settings
+      url: /battlenetlogin_settings.html
+      
+- title: sidebar7
+  product: Twitch Login
+  version: 
+  folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /twitchlogin_index.html
+    - title: Settings
+      url: /twitchlogin_settings.html      

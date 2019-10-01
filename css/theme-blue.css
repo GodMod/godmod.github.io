@@ -216,3 +216,7 @@ table > tbody > tr:nth-of-type(odd) {
   font-family: "Open Sans", "Segoe UI", "DejaVu Sans", "Lucida Grande", "Helvetica", sans-serif;
   font-weight: 300;
 }
+
+.affix {
+	position: initial !important;
+}

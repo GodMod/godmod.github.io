@@ -22,7 +22,7 @@ There are two group permissions:
 Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoints, as personal information (e.g. email address) is transfered or can be accessed.
 
 ## License
-See [Commercial License](license_en.html).
+AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
 
 
 {% include links.html %}
