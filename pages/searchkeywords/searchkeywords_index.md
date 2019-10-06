@@ -7,6 +7,7 @@ folder: searchkeywords
 
 ## About the plugin
 This plugin offers an administrative page and lists the searched keywords.
+You will the page at `Management > Logs > Search terms`.
 
 ## Settings
 There are no settings for this plugin.
