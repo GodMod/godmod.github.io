@@ -120,3 +120,17 @@ entries:
 
     - title: Introduction
       url: /twitchlogin_index.html
+      
+- title: sidebar8
+  product: Dices
+  version: 
+  folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /dices_index.html  
+
+        - title: Customization
+      url: /dices_custom.html       
