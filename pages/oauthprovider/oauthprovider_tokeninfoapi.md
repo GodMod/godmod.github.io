@@ -34,7 +34,7 @@ $strResult = $this->urlfetcher->post('https://test.eqdkp-plus.eu/wcf/oauth-token
 
 ## Response Format
 
-The response has `JSON` format.
+The response has `JSON` format. If the supplied token is invalid, the response header is `404 Not Found`.
 
 ## Example Response for Bearer Token
 
