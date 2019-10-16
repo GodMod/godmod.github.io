@@ -12,12 +12,12 @@ The Token API supports multiple grants:
 * password
 * refresh_token
 
+## URL
+You can get the URL for the Token-Endpoint when editing the OAuth-Client.
+
 ## Authorization-Code Grant Type
 
 This Grant Type exchanges the authorisation code into an user's access token.
-
-### URL
-You can get the URL for the Token-Endpoint when editing the OAuth-Client.
 
 ### Request Format
 
@@ -67,9 +67,6 @@ The response has `JSON` format.
 ## Refresh Token Grant Type
 
 This grant type allows getting a new access token by sending an existing refresh token.
-
-### URL
-You can get the URL for the Token-Endpoint when editing the OAuth-Client.
 
 ### Request Format
 
