@@ -26,6 +26,12 @@ entries:
 
     - title: Token-Endpoint
       url: /oauthprovider_tokenapi.html
+      
+    - title: Revoke Token-Endpoint
+      url: /oauthprovider_revoketokenapi.html
+      
+    - title: Tokeninfo-Endpoint
+      url: /oauthprovider_tokeninfoapi.html     
 
   - title: User-API
     folderitems:
