@@ -9,6 +9,7 @@ folder: oauthprovider
 * Name - *the Name of your Client*
 * Redirect-URL - *insert the redirect-URL of your application, where the user should be returned*
 * Allow implicit Grant type - *should only enabled for JavaScript applications*
+* Allow Password Grant type - *should only enabled for own applications, if the login with username and password is really required (e.g. at mobile application)*
 
 ## Edit OAuth-Client
 When edit an OAuth-Client, you will get the following additional information:
