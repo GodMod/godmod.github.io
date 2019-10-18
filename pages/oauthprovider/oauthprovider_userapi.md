@@ -16,7 +16,7 @@ You can get the URL for the User-API when editing the OAuth-Client.
 
 The User-API requires authentication by using an Access Token. Also, an JWT Token can be used to access this API.
 
-You can pass the Access/JWT Token using the `GET` or `POST` param `access_token`.
+You can pass the Access/JWT Token using the `GET` or `POST` param `access_token`, but you should prefer using `POST` for security reasons.
 
 ```php
 $request = new HTTPRequest('https://test.eqdkp-plus.eu/wcf/oauth-user/?access_token='.$data['access_token']);
