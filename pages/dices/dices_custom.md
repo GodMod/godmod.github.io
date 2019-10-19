@@ -10,6 +10,10 @@ folder: dices
 To change the color of the dices, you can add the following SCSS to your style and adjust the colors:
 
 ```scss
+div[data-dice-id='0']:before, .redactor-box .re-dice .fa-cube {
+   color: #000000;
+}
+
 div[data-dice-id='1']:before, .redactor-box .re-dice1 .fa-cube {
    color: #ff0000;
 }
