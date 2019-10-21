@@ -105,7 +105,7 @@ The header contains the used algorithm and token type. Currently, only the HS256
 }
 ```
 
-The payload contains the following data:
+The payload contains the following data (for scope `identify` / `openid` and `email`):
 
 ```json
 {
@@ -121,7 +121,7 @@ The payload contains the following data:
   "email": "admin@admin.de"
 }
 ```
-The payload will never contain the profile information, even if it was requested. You can use the User-API to request the profile information, by passing the JWT-Token as access token.
+The payload will never contain the profile information, even if it was requested. The Email-address is only contained if scope `email` was requested. You can use the User-API to request the profile information, by passing the JWT-Token as access token.
 
 The last part of the JWT Token is the signature. As key, the JWT-Secret of your OAuth-Client is used.
 So you can use the JWT-Secret to prove the signature. Also, the parts like `iss`, `iat`, `nbf` and `exp` should be checked by your application.
