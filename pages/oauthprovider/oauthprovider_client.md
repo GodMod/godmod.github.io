@@ -18,6 +18,5 @@ When edit an OAuth-Client, you will get the following additional information:
 * User-API Endpoint - *Copy it into your application*
 * Client-ID - *Copy it into your application*
 * Client-Secret - *Copy it into your application, but it should be kept secret*
-* JWT-Secret - *Used to verify the Signature of the JWT Token*
 
 {% include links.html %}

@@ -3,7 +3,7 @@
 entries:
 - title: sidebar1
   product: WSC OAuth Provider
-  version: 1.0
+  version: 1.1
   folders:
   
   - title: Introduction
@@ -17,6 +17,9 @@ entries:
       
     - title: Authorized Applications
       url: /oauthprovider_apps.html
+      
+    - title: OpenID Connect (OIDC)
+      url: /oauthprovider_oidc.html
 
   - title: OAuth Endpoints
     folderitems:

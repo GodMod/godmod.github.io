@@ -21,7 +21,7 @@ The following parameters are required:
 
 | Name | Description |
 |------|-------------|
-|`access_token` | the access token you want information about |
+|`access_token` | the access token/JWT token you want information about |
 
 
 ## Example Request
@@ -41,11 +41,11 @@ The response has `JSON` format. If the supplied token is invalid, the response h
 
 ```json
 { 
-   "userID": 1,
-   "clientID": 1421589198,
+   "sub": 1,
+   "aud": 1421589198,
    "scope":"identify email profile",
-   "expires" : 1569163229,
-   "tokenType": "bearer"
+   "exp" : 1569163229,
+   "type": "bearer"
 }
 ```
 
@@ -53,15 +53,16 @@ The response has `JSON` format. If the supplied token is invalid, the response h
 
 ```json
 { 
-   "userID": 1,
-   "clientID": 1421589198,
-   "scope":"identify email profile",
-   "expires" : 1569163229,
-   "tokenType": "jwt",
-   "iss": "https://test.eqdkp-plus.eu/",
-   "aud": "https://test.eqdkp-plus.eu/",
-   "iat": 1569161429,
-   "nbf": 1569161369,
+   "sub":1,
+   "aud":"1307734008",
+   "scope":"openid email",
+   "type":"jwt",
+   "exp":1571559438,
+   "iss":"http:\/\/somedomain.com\/",
+   "iat":1571555838,
+   "nbf":1571555778,
+   "name":"root",
+   "email":"admin@admin.de"
 }
 ```
 

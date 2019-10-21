@@ -18,6 +18,10 @@ There are two group permissions:
 | Can use OAuth | User | Allows an user to authorize applications |
 | Can manage OAuth-Clients | Admin | Can manage OAuth-Clients |
 
+## Settings
+`Configuration > Security > OAuth-Provider`:
+* Send Emails to the user if client is authorized for the first time - *user get's an email with information about his authorization. You should enable this option e.g. when using password grant type.*
+
 ## Security
 Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoints, as personal information (e.g. email address) is transfered or can be accessed.
 Also, use `POST` for transfering parameters wherever possible.
