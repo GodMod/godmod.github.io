@@ -59,7 +59,7 @@ The response has `JSON` format. The response only contains the fields correspond
 
 ## Example Response
 
-Example for scope `identify`:
+Example for scope `identify` / `openid`:
 
 ```json
 { 
@@ -83,7 +83,7 @@ Example for scope `email`:
 ```
 
 
-Example with all scopes (`identify`, `email` and `profile`):
+Example with all scopes (`identify` / `openid`, `email` and `profile`):
 
 ```json
 { 
