@@ -63,13 +63,14 @@ Example for scope `identify`:
 
 ```json
 { 
+   "sub":1,
    "userID":1,
+   "name":"root",
    "username":"root",
-   "avatar":{ 
-      "url":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
-      "height":128,
-      "width":128
-   }
+   "preferred_username":"root",
+   "picture":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
+   "picture_height":128,
+   "picture_width":128
 }
 ```
 
@@ -86,13 +87,14 @@ Example with all scopes (`identify`, `email` and `profile`):
 
 ```json
 { 
+   "sub":1,
    "userID":1,
+   "name":"root",
    "username":"root",
-   "avatar":{ 
-      "url":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
-      "height":128,
-      "width":128
-   },
+   "preferred_username":"root",
+   "picture":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiPjxwYXRoIGZpbGw9IiNkYzc2ZTkiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz48dGV4dCB4PSI4IiB5PSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjciPlJPPC90ZXh0Pjwvc3ZnPg==",
+   "picture_height":128,
+   "picture_width":128,
    "email":"admin@admin.de",
    "profile":{ 
       "userOption1":null,
@@ -129,6 +131,7 @@ Example with all scopes (`identify`, `email` and `profile`):
       "userOption35":"0",
       "userOption36":"0",
       "userOption37":0,
+      "userOption39":null,
       "groupID":4,
       "cssClassName":"blue",
       "registrationDate":1549550181,
