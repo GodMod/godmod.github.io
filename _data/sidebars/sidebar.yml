@@ -11,6 +11,9 @@ entries:
 
     - title: Introduction
       url: /oauthprovider_index.html 
+      
+    - title: How it works
+      url: /oauthprovider_howitworks.html
 
     - title: Creating OAuth-Clients
       url: /oauthprovider_client.html
