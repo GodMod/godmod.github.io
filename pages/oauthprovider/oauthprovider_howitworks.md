@@ -7,7 +7,7 @@ folder: oauthprovider
 
 ## How it works
 
-![alt text](howitworks.jpg "")
+![Login flow for OAuth](/images/howitworks.jpg "Login flow for OAuth")
 
 * You install OAuth Provider extension into a WSC installation. This will be your "Master" system, where your user will register their accounts, authorize Clients etc. As the OAuth Provider does not change the login, users can still use Security features like Two-Factor Authentication etc. for Login at the "Master" system.
 
