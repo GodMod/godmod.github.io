@@ -9,5 +9,6 @@ folder: wscoauth
 * Client-ID - *Copy the Client ID from your OAuth-Client of your WSC OAuth-Provider* 
 * Client Secret - *Copy the Client Secret from your OAuth-Client of your WSC OAuth-Provider* 
 * Authorization-URL of the OAuth-Provider - *Insert here the Authorization-URL of your WSC OAuth-Provider. The extension needs this for redirecting to the right OAuth-Provider.*
+* Fast Usercreation during the Login - *Instead of redirecting the user to the register form, it is tried to create the user during the login process.*
 
 {% include links.html %}

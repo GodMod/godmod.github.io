@@ -13,6 +13,8 @@ folder: genoauth
 * Key of the User-ID - *Insert which key in the response contains the User-ID. Nested Indices can be used by seperating the keys with colons. E.g. for accessing `$userData['firstKey']['secondKey']` insert `firstKey:secondKey`*
 * Key of the Username - *Insert which key in the response contains the username. Nested Indices can be used by seperating the keys with colons. E.g. for accessing `$userData['firstKey']['secondKey']` insert `firstKey:secondKey`*
 * Key of the Email-Address - *Insert which key in the response contains the email address. Nested Indices can be used by seperating the keys with colons. E.g. for accessing `$userData['firstKey']['secondKey']` insert `firstKey:secondKey`*
+* Fast Usercreation during the Login - *Instead of redirecting the user to the register form, it is tried to create the user during the login process.*
+
 
 ## Example
 As an example, the plugin will be configured for using [Discord](https://discordapp.com). All required information can be found at the [Developer Portal](https://discordapp.com/developers/docs/resources/user#get-current-user).
