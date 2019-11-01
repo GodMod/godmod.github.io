@@ -8,7 +8,7 @@ folder: hidelogin
 ## About the plugin
 This plugin is for hiding the input fields for username and password. This is handy when an 3rd Party Login (like OAuth) should be used for your WSC installation.
 
-You can also hide the registration message. Furthermore, it is possible to show a link for the classic login with credentials, so users without an connected 3rd Party are still able to login.
+You can also hide the registration message or redirect the Registration to a given URL. Furthermore, it is possible to show a link for the classic login with credentials, so users without an connected 3rd Party are still able to login.
 
 ## Settings
 
