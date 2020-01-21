@@ -16,7 +16,7 @@ folder: genoauth
 * Fast Usercreation during the Login - *Instead of redirecting the user to the register form, it is tried to create the user during the login process.*
 
 
-## Example
+## Example - Discord
 As an example, the plugin will be configured for using [Discord](https://discordapp.com). All required information can be found at the [Developer Portal](https://discordapp.com/developers/docs/resources/user#get-current-user).
 
 * URL of the User-API - `https://discordapp.com/api/users/@me`
@@ -25,5 +25,15 @@ As an example, the plugin will be configured for using [Discord](https://discord
 * Key of the User-ID - `id`
 * Key of the Username - `username`
 * Key of the Email-Address - `email`
+
+## Example - Nextcloud
+For Nextcloud, the [SEO friendly URLs](https://www.woltlab.com/article/25-setting-up-user-friendly-urls/) must be configured.
+
+* URL of the User-API - `https://cloud.somedomain.com/ocs/v2.php/cloud/user?format=json`
+* Passing of the Access-Tokens - `Authorization-Header "Bearer"`
+* Parametername of the Access-Tokens - `access_token`
+* Key of the User-ID - `ocs:data:id`
+* Key of the Username - `ocs:data:display-name`
+* Key of the Email-Address - `ocs:data:email`
 
 {% include links.html %}
