@@ -15,6 +15,6 @@ Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoint
 Also, your WSC installation using the 3rd Party Login should only use an encrypted connection.
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}

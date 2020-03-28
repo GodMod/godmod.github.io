@@ -18,6 +18,6 @@ To get the Client-ID and Client-Secret, you have to create a new Application at 
 * Server-Region - *Select the region of your users*
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}

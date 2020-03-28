@@ -37,6 +37,6 @@ At the BBCode Management, you can adjust the Button Values and Icons for dice, d
 * Maximum Number of throws - *Maximum number of generated random numbers.*
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}

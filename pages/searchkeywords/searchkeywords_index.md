@@ -16,6 +16,6 @@ There are no settings for this plugin.
 Users need the administrative permission to view Logs in order to see the searched keywords.
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}

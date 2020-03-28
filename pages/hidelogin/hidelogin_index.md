@@ -23,6 +23,6 @@ You can also hide the registration message or redirect the Registration to a giv
 * Hide Link to Registration - *Hide Registration Hints at the Login-Dialog as well as at the Login-Page.*
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}

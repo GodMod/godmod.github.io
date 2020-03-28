@@ -27,7 +27,7 @@ Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoint
 Also, use `POST` for transfering parameters wherever possible.
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 
 {% include links.html %}

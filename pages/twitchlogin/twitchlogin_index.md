@@ -17,6 +17,6 @@ You need to insert a Redirect-URI, which you will get at the Settings-Page of th
 * Client-Secret - *Copy from your Application at Twitch Developer Portal*
 
 ## License
-AGPLv3 - See [https://eqdkp-plus.eu/en/about/license-agpl.html](https://eqdkp-plus.eu/en/about/license-agpl.html)
+[GMLv1](/license/LICENSE)
 
 {% include links.html %}
