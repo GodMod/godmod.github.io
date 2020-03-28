@@ -17,6 +17,6 @@ You need to insert a Redirect-URI, which you will get at the Settings-Page of th
 * Client-Secret - *Copy from your Application at Twitch Developer Portal*
 
 ## License
-[GMLv1](/license/LICENSE)
+[GMLv1](license.html)
 
 {% include links.html %}

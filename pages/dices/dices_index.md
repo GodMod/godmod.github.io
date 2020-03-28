@@ -37,6 +37,6 @@ At the BBCode Management, you can adjust the Button Values and Icons for dice, d
 * Maximum Number of throws - *Maximum number of generated random numbers.*
 
 ## License
-[GMLv1](/license/LICENSE)
+[GMLv1](license.html)
 
 {% include links.html %}

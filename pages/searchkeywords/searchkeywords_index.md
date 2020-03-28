@@ -16,6 +16,6 @@ There are no settings for this plugin.
 Users need the administrative permission to view Logs in order to see the searched keywords.
 
 ## License
-[GMLv1](/license/LICENSE)
+[GMLv1](license.html)
 
 {% include links.html %}

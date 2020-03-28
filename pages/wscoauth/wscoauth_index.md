@@ -15,6 +15,6 @@ Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoint
 Also, your WSC installation using the 3rd Party Login should only use an encrypted connection.
 
 ## License
-[GMLv1](/license/LICENSE)
+[GMLv1](license.html)
 
 {% include links.html %}

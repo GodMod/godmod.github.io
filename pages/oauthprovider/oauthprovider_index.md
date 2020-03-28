@@ -27,7 +27,7 @@ Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoint
 Also, use `POST` for transfering parameters wherever possible.
 
 ## License
-[GMLv1](/license/LICENSE)
+[GMLv1](license.html)
 
 
 {% include links.html %}
