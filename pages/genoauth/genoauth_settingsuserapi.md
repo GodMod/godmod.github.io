@@ -36,4 +36,12 @@ For Nextcloud, the [SEO friendly URLs](https://www.woltlab.com/article/25-settin
 * Key of the Username - `ocs:data:display-name`
 * Key of the Email-Address - `ocs:data:email`
 
+## Example - Keycloak
+* URL of the User-API - `https://somedomain.com/realms/{realm-name}/protocol/openid-connect/userinfo`
+* Passing of the Access-Tokens - `Authorization-Header "Bearer"`
+* Parametername of the Access-Tokens - `access_token`
+* Key of the User-ID - `sub`
+* Key of the Username - `name` or `preferred_username`
+* Key of the Email-Address - `email`
+
 {% include links.html %}

@@ -12,6 +12,9 @@ This extension allows the 3rd Party Login (like Facebook or Google) using an gen
 ## License
 [GMLv1](license.html)
 
+## OpenID-Connect (OIDC)
+As OpenID-Connect uses the OAuth2 Protocol, this extension also works with OIDC-Server, like Keycloak etc. But as there is currently no autoconfiguration implemented, you have to extract the needed configuration from the `<domain.com>/.well-known/openid-configuration` file.
+
 ## Security
 Please use only encrypted connections (SSL/TLS) for accessing the OAuth-Endpoints, as personal information (e.g. email address) is transfered or can be accessed.
 Also, your WSC installation using the 3rd Party Login should only use an encrypted connection.

@@ -34,4 +34,12 @@ For Nextcloud, the [SEO friendly URLs](https://www.woltlab.com/article/25-settin
 * Authorization Endpoint - `https://cloud.somedomain.com/index.php/apps/oauth2/authorize`
 * Token Endpoint - `https://cloud.somedomain.com/index.php/apps/oauth2/api/v1/token`
 
+## Example - Keycloak
+* Name of the OAuth Provider - `Keycloak`
+* Client-ID - `1234567890`
+* Client Secret - `AbCdEfGhiJAbCdEfGhiJAbCdEfGhiJ`
+* Scope - `email openid`
+* Authorization Endpoint - `https://somedomain.com/realms/{realm-name}/protocol/openid-connect/auth`
+* Token Endpoint - `https://somedomain.com/realms/{realm-name}/protocol/openid-connect/token`
+
 {% include links.html %}
