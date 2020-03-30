@@ -37,6 +37,8 @@ For Nextcloud, the [SEO friendly URLs](https://www.woltlab.com/article/25-settin
 * Key of the Email-Address - `ocs:data:email`
 
 ## Example - Keycloak
+You will find the Endpoint-URLs and available scopes at the configuration file `https://somedomain.com/auth/realms/{realm-name}/.well-known/openid-configuration`.
+
 * URL of the User-API - `https://somedomain.com/realms/{realm-name}/protocol/openid-connect/userinfo`
 * Passing of the Access-Tokens - `Authorization-Header "Bearer"`
 * Parametername of the Access-Tokens - `access_token`
