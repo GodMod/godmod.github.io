@@ -3,7 +3,7 @@
 entries:
 - title: sidebar1
   product: WSC OAuth Provider
-  version: 1.1
+  version: 
   folders:
   
   - title: Introduction
@@ -48,7 +48,7 @@ entries:
       
 - title: sidebar2
   product: WSC OAuth Login
-  version: 1.0
+  version: 
   folders:
   
   - title: Introduction
@@ -67,8 +67,8 @@ entries:
       url: /wscoauth_custom.html   
       
 - title: sidebar3
-  product: Generic OAuth Login
-  version: 1.0
+  product: Generic OAuth/OIDC Login
+  version: 
   folders:
   
   - title: Introduction
@@ -91,7 +91,7 @@ entries:
       
 - title: sidebar4
   product: Search Keywords
-  version: 1.0
+  version: 
   folders:
   
   - title: Introduction
