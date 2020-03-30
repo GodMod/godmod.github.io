@@ -13,7 +13,7 @@ folder: genoauth
 * Scope - *The Scope(s) required for the OAuth-Provider. Multiple can be added seperated by space. Choose a scope that will include the user's email address*
 * Authorization Endpoint - *URL for the Authorization Endpoint of the OAuth-Provider*
 * Token Endpoint - *URL for the Token Endpoint of the OAuth-Provider*
-* Passing of the Client-Credentials to the Token-Endpoint - *How the Client-Credentials should be passed to the Token-Endpoint. Select between "Post-Parameter" and "Authorization-Header Basic".
+* Passing of the Client-Credentials to the Token-Endpoint - *How the Client-Credentials should be passed to the Token-Endpoint. Select between "Post-Parameter" and "Authorization-Header Basic"*
 
 ## Example - Discord
 As an example, the plugin will be configured for using [Discord](https://discordapp.com). All required information can be found at the [Developer Portal](https://discordapp.com/developers/docs/topics/oauth2).
