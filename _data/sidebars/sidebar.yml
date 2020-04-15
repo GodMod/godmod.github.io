@@ -134,6 +134,17 @@ entries:
       url: /twitchlogin_index.html
       
 - title: sidebar8
+  product: Discord Login
+  version: 
+  folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /discordlogin_index.html
+      
+- title: sidebar9
   product: Dices
   version: 
   folders:

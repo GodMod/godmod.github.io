@@ -1,6 +1,6 @@
 ---
 title: Dices
-sidebar: sidebar8
+sidebar: sidebar9
 permalink: dices_index.html
 folder: dices
 ---

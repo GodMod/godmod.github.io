@@ -1,6 +1,6 @@
 ---
 title: Customization
-sidebar: sidebar8
+sidebar: sidebar9
 permalink: dices_custom.html
 folder: dices
 ---
