@@ -86,6 +86,8 @@ entries:
       url: /genoauth_settingsuserapi.html
     - title: Buttons
       url: /genoauth_settingsbuttons.html  
+    - title: Logout
+      url: /genoauth_settingslogout.html
     - title: Customization
       url: /genoauth_settingscustom.html     
       
