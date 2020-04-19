@@ -7,9 +7,11 @@ folder: oauthprovider
 
 ## Add OAuth-Client
 * Name - *the Name of your Client*
-* Redirect-URL - *insert the redirect-URL of your application, where the user should be returned*
 * Allow implicit Grant type - *should only enabled for JavaScript applications*
 * Allow Password Grant type - *should only enabled for own applications, if the login with username and password is really required (e.g. at mobile application)*
+* Enforce PKCE - *if enabled, the client must use Proof Key for Code Exchange (PKCE). This should be enabled, if it is a public client.*
+* Redirect-URLs - *insert valid Redirect-URLs of your application, where the user should be returned*
+* Permissions - *you can set permissions for user and usergroups, which are allowed to login with this Client*
 
 ## Edit OAuth-Client
 When edit an OAuth-Client, you will get the following additional information:

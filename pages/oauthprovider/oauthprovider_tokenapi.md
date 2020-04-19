@@ -32,7 +32,7 @@ The following parameters are required:
 |`grant_type` | must be set to `authorization_code` |
 |`code` | the code from the querystring |
 |`redirect_uri` | your redirect_uri |
-
+|`codeVerifier` | A random string used for PKCE |
 
 
 ### Example Request
