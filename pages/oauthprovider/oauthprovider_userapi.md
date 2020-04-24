@@ -78,7 +78,8 @@ Example for scope `email`:
 
 ```json
 { 
-   "email":"admin@admin.de"
+   "email":"admin@admin.de",
+   "email_verified": true
 }
 ```
 
@@ -147,7 +148,15 @@ Example with all scopes (`identify` / `openid`, `email` and `profile`):
       "title":"root",
       "userTitle":"Administrator",
       "signature":""
-   }
+   },
+   "groups":{
+	"1":"Jeder",
+	"3":"Registrierte Benutzer",
+	"4":"Administratoren
+   "},
+   "locale":"de-DE",
+   "zoneinfo":"Europe\/Berlin",
+   "gender":"male"
 }
 ```
 

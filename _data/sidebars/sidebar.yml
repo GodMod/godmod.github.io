@@ -40,7 +40,7 @@ entries:
       url: /oauthprovider_tokeninfoapi.html   
       
     - title: Logout-Endpoint
-      url: /oauthprovider_logour.html     
+      url: /oauthprovider_logout.html     
   - title: User-API
     folderitems:
 

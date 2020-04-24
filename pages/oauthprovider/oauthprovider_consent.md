@@ -41,6 +41,8 @@ The following parameters are optional:
 |`response_type` | `code` will return authorization code, `token` will return access token (if implicit grant is allowed), `id_token` will return JWT-Token (if implicit grant is allowed). Default: `code` |
 |`state` | a custom state from your application. Please see next chapter for using this param for security purposes |
 |`nonce` | a custom random value from your application, which will be included in an ID Token |
+|`code_challenge` | For PKCE, as stated in RFC7636 |
+|`code_challenge_method` | For PKCE, as stated in RFC7636. `S256` or `plain`, defaults to `plain` if parameter omitted |
 
 ## State and Security
 
