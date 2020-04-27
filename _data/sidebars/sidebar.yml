@@ -160,4 +160,18 @@ entries:
       url: /dices_index.html  
 
     - title: Customization
-      url: /dices_custom.html       
+      url: /dices_custom.html
+
+- title: sidebar10
+  product: Have I been pwned
+  version: 
+  folders:
+  
+  - title: Introduction
+    folderitems:
+
+    - title: Introduction
+      url: /haveibeenpwned_index.html  
+
+    - title: Settings
+      url: /haveibeenpwned_settings.html             
